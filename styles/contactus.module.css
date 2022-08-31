@@ -1,0 +1,324 @@
+.mainBody{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    font-family: 'inter';
+    font-style: normal;
+    padding-top: 50px;
+}
+
+.container1{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.subContainer1{
+    width: 60%;
+    height: auto;
+    margin:  auto;
+    text-align: center;
+}
+
+.header1{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #14142b;
+}
+
+.texts{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #6e7191;
+}
+
+.formContainer{
+    width: 100%;
+    height: auto;
+    margin: 40px 0 50px
+
+}
+
+.input1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.columnFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.labelText{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #14142b;
+    padding-right: 307px;
+}
+
+.labelText2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #14142b;
+    padding-right: 340px;
+}
+
+.field{
+    width: 378px;
+    height: 52px;
+    color: #6e7191;
+    padding-left: 20px;
+    background-color: #f4f4f4;
+    border: none;
+}
+
+.labelText3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #14142b;
+    padding-right: 720px;
+    padding-bottom: 10px;
+}
+
+.Textarea{
+    width: 780px;
+    height: 180px;
+    background-color: #f4f4f4;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.Button{
+    width: 161px;
+    height: 43px;
+    background-color: #5f2eea;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    margin-top: 20px;
+}
+
+.container2{
+    width: 100%;
+    height: 60vh;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.miniContainer{
+    width: 352px;
+    height: 289px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.smallheader{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #14142b;
+    margin-top: 30px;
+}
+
+.paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #14142b;
+    margin-top: 15px;
+    width: 80%;
+}
+
+/* tablet view */
+@media all and (max-width: 800px) {
+
+    .mainBody{
+        padding-top: 25px;
+    }
+
+    .subContainer1{
+        width: 100%;
+        height: auto;
+        margin:  auto;
+        text-align: center;
+    }
+    .header1{
+        font-size: 33px;
+    }
+
+    .texts{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        color: #6e7191;
+    }
+
+    .field{
+        width: 330px;
+        height: 45px;
+    }
+
+    .labelText{
+        padding-right: 260px;
+    }
+
+    .labelText2{
+        padding-right: 290px;
+    }
+
+    .Textarea{
+        width: 680px;
+        height: 180px;
+        background-color: #f4f4f4;
+        padding-left: 20px;
+        padding-top: 20px;    
+    }
+
+    .labelText3{
+        padding-right: 620px;
+        padding-bottom: 10px;
+    }
+
+    .container2{
+        height: auto;
+    }
+
+    .miniContainer{
+        width: 200px;
+        height: 250px;
+        margin: 50px 0;
+    }
+}
+
+/*normal phone sceeen size  */
+@media all and (max-width: 500px) {
+    .mainBody{
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .subContainer1{
+        width: 80%;
+        height: auto;
+        margin:  auto;
+        text-align: center;
+    }
+    .header1{
+        font-size: 22px;
+    }
+
+    .columnFlex{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .texts{
+        font-size: 13px;
+        line-height: 0px; 
+    }
+
+    .input1{
+        gap: 10px;
+        width: fit-content;    
+    }
+
+    .field{
+        width: 100%;
+        height: 45px;
+    }
+
+    .labelText{
+        padding-right: 0;
+    }
+
+    .labelText2{
+        padding-right: 0;
+    }
+
+    .Textarea{
+        width: 100%;
+        height: 140px;
+        background-color: #f4f4f4;
+        padding-left: 20px;
+        padding-top: 20px;    
+    }
+
+    .labelText3{
+        padding-right: 0px;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .container2{
+        flex-direction: column;  
+        gap: 0px;  
+        align-items: center;
+        justify-content: unset;
+        padding: 40px;
+    }
+
+    .miniContainer{
+        width: 100% !important;
+        height: auto;
+        margin: 15px 0;
+        padding: 18px !important;
+    }
+
+    .smallheader{
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 24px;
+        color: #14142b;
+        margin-top: 30px;
+    }
+
+    .paragraph{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        color: #14142b;
+        margin-top: 15px;
+        width: 50%;
+    }
+}
+
+/*small and extra small phone sceeen size  */
+@media all and (max-width: 375px){
+    .miniContainer{
+        width: 100%;
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    .smallheader{
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .paragraph{
+        font-size: 10px;
+        line-height: 13px;
+        margin-top: 10px; 
+        width: 100%;
+    }
+
+}

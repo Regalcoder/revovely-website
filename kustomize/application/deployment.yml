@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: revovely-website-deployment
+  labels:
+    app: revovely-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: revovely-website
+  template:
+    metadata:
+      labels:
+        app: revovely-website
+    spec:
+      imagePullSecrets:
+      - name: docker-secret
+      containers:
+      - name: betrebound
+        image: princesegzy01/revovely-website:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+       
+      

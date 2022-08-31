@@ -1,0 +1,224 @@
+.faq{
+    width: 100%;
+    height: auto;
+    background-color: #F4F4F4;
+    text-align: center;
+    padding: 90px 0px 70px;
+  }
+
+.faqContent {
+    margin-top: 80px;
+}
+
+.faqContent details {
+  font-size: 1rem;
+  /* margin: 7em auto; */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* width: 100%; */
+  background: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  width: 70%;
+  /* height: 78px; */
+  height: auto;
+  
+}
+.faqContents details {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    height: auto;
+    width: 75%;
+    margin-left: 30px;
+    margin: auto;
+    text-align: left;
+    padding: 25px;
+  }
+
+.faqContent details .summary-title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+    
+}
+.faqContent details:hover {
+  cursor: pointer;
+}
+/* .faqContent details .summary-content {
+  border-top: 1px solid #e2e8f0;
+  cursor: default;
+  padding: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 0px 25px;
+  padding-left: 50px;
+  border: 1px solid black;
+} */
+.faqContent details summary {
+  list-style: none;
+  padding: 5px 25px;
+  /* margin-bottom: 20px; */
+}
+.faqContent details summary:focus {
+  outline: none;
+}
+.faqContent details summary:hover .summary-chevron-up svg {
+  opacity: 1;
+}
+.faqContent details .summary-chevron-up svg {
+  opacity: 0.5;
+}
+.faqContent details .summary-chevron-up,
+.faqContent details .summary-chevron-down {
+  pointer-events: none;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  background: #ffffff;
+}
+.faqContent details .summary-chevron-up svg,
+.faqContent details .summary-chevron-down svg {
+  display: block;
+  
+  
+}
+.faqContent details .feather-chevron-down {
+    float: right;
+    width: 50px;
+}
+.faqContent details summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+
+.help {
+    background: #FFFFFF;
+    padding: 120px 0px;
+    height: auto;
+    margin: auto;
+    /* text-align: center; */
+}
+.helpContents {
+    margin: auto;
+    text-align: center;
+    width: 65%;
+}
+.help .title{
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.title .content {
+    /* margin-top: 30px; */
+    font-size: 20px;
+    color: #6E7191;
+    font-weight: 300;
+    margin: auto;
+    line-height: 35px;
+  
+}
+.featureRow {
+    /* border: 1px solid black; */
+    height: auto;
+    margin: 10px 40px 0px;
+    /* width: 100%; */
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    background: #F4F4F4;
+    border-radius: 20px;
+    /* height: 350px; */
+    width: 340px;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+
+}
+.iconborder {
+    width: 50px;
+    height: 50px;
+    background: #F4F4F4;
+    border-radius: 16px;
+    padding: 11px 15px;
+}
+.card h4 {
+    color: #14142B;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.card p {
+    color: #6E7191;
+    font-size: 15px;
+    margin-top: 12px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+
+
+@media only screen and (max-width: 1104.98px) 
+{
+    .card {
+
+        max-width: 300px;
+        padding: 20px 20px;
+    }
+    .help .featureRow {
+        margin: 0px 10px;
+    }
+}
+@media only screen and (max-width: 768.98px) 
+{
+  .faq .faqContents {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .faqContents details {
+    width: 90%;
+    height: auto;
+    padding: 15px 25px;
+  }
+  .help .featureRow {
+    margin: 0px;
+    /* border: 1px solid black; */
+}
+}
+
+@media only screen and (max-width: 425.98px) 
+{
+  .faqContents summary {
+    font-size: 15px;
+    
+  }
+  .faqContents details {
+    padding: 15px;
+  }
+  .helpContents {
+    width: 95%;
+  }
+  .help .featureRow {
+    margin: 0px 50px;
+  }
+}
+
+
+    
+@media only screen and (max-width: 375.98px) 
+{
+    .help .featureRow {
+        margin: 0px 25px ;
+    }  
+}
+@media only screen and (max-width: 320.98px) 
+{
+  .help .featureRow {
+    margin: 0px ;
+}  
+}
